@@ -1,0 +1,169 @@
+/* General page styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c2f33; /* Dark background */
+  color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+/* Container for the entire app */
+.weather-container {
+  background-color: #36393f; /* Dark card background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Search section */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input#enteredcity {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 100%;
+  max-width: 250px;
+}
+
+button#searchbtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#searchbtn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Left side: Temperature and icon */
+.weather-left {
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon {
+  font-size: 80px;
+  margin-right: 10px;
+}
+
+.weather-temp {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+/* Right side: Weather details */
+.weather-right {
+  text-align: left;
+}
+
+.weather-right h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.weather-right p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+/* Display searched city details */
+.searched-weather-container {
+  background-color: #36393f; /* Same background as the main weather container */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Same shadow effect */
+  border-radius: 15px; /* Same border radius */
+  padding: 20px; /* Same padding */
+  margin-top: 20px; /* Space above */
+  width: 100%;
+  max-width: 700px; /* Same max-width */
+  text-align: center; /* Center the text */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center align items */
+  color: white; /* Match text color */
+}
+
+.searched-weather-left {
+  display: flex; /* Flexbox layout for icon and temperature */
+  align-items: center;
+}
+
+.searched-weather-icon {
+  font-size: 50px; /* Size for the icon */
+  margin-right: 10px; /* Space to the right */
+}
+
+.searched-weather-temp {
+  font-size: 48px; /* Size for the temperature */
+  font-weight: bold; /* Bold text */
+  color: #f5f5f5; /* Text color */
+}
+
+/* Right side for searched city weather details */
+.searched-weather-right {
+  text-align: left; /* Align text to the left */
+}
+
+.searched-weather-right h3 {
+  font-size: 20px; /* Font size for city name */
+  margin-bottom: 5px; /* Space below */
+}
+
+.searched-weather-right p {
+  margin: 5px 0; /* Margin for paragraphs */
+  font-size: 14px; /* Font size for other details */
+  color: #a0a0a0; /* Text color */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .weather-container,
+  .searched-weather-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the start */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .weather-left,
+  .searched-weather-left {
+    justify-content: center; /* Center the items */
+    margin-bottom: 20px; /* Space below */
+  }
+
+  .weather-temp,
+  .searched-weather-temp {
+    font-size: 36px; /* Adjust font size */
+  }
+
+  .weather-right h3,
+  .weather-right p,
+  .searched-weather-right h3,
+  .searched-weather-right p {
+    font-size: 16px; /* Font size for mobile */
+  }
+}

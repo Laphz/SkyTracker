@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="search-container">
+      <input id="enteredcity" type="text" placeholder="Enter Your City Name" />
+      <button id="searchbtn">Search</button>
+    </div>
+
+    <!-- Weather Card Container -->
+    <div class="weather-container">
+      <!-- Left: Temperature and icon -->
+      <div class="weather-left">
+        <div class="weather-icon">
+          <img id="current-weather-icon" src="" alt="" />
+        </div>
+        <div class="weather-temp" id="currenttemp"></div>
+      </div>
+
+      <!-- Right: Weather details -->
+      <div class="weather-right">
+        <h3 id="currentcity"></h3>
+        <p id="currentLtime"></p>
+        <p id="currentweather"></p>
+      </div>
+    </div>
+
+    <!-- Display searched city details -->
+    <div class="searched-weather-container">
+      <img id="display-weather-icon" src="" alt="" />
+      <h3 id="displaycity"></h3>
+      <p id="displayLtime"></p>
+      <p id="displaytemp"></p>
+      <p id="displayweather"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
